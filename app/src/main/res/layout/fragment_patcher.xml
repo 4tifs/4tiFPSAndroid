@@ -1,0 +1,15 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Patch an MP4 or MOV locally. Your video never leaves this device." android:textColor="#BBBBBB" android:textAlignment="center" android:gravity="center" android:textSize="15sp" />
+        <Button android:id="@+id/selectVideo" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="28dp" android:text="SELECT VIDEO" />
+        <TextView android:id="@+id/fileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:gravity="center" android:text="No video selected" android:textColor="#DDDDDD" android:textSize="13sp" />
+        <RadioGroup android:id="@+id/fpsGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:orientation="horizontal">
+            <RadioButton android:id="@+id/fps60" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:checked="true" android:text="60 FPS" android:textColor="#FFFFFF" />
+            <RadioButton android:id="@+id/fps120" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="120 FPS" android:textColor="#FFFFFF" />
+        </RadioGroup>
+        <Button android:id="@+id/patchVideo" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="22dp" android:enabled="false" android:text="PATCH VIDEO" />
+        <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:visibility="gone" />
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:gravity="center" android:textColor="#BBBBBB" android:textSize="13sp" />
+        <Button android:id="@+id/restoreVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="34dp" android:background="@android:color/transparent" android:text="Restore a previously patched 4tif video" android:textAllCaps="false" android:textColor="#AAAAAA" android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
